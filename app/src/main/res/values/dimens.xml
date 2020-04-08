@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_vertical">16dp</dimen>
+    <dimen name="height_actionbar">50dp</dimen>
+
+    <dimen name="textsize_btn">16sp</dimen>
+    <dimen name="width_btn">270dp</dimen>
+    <dimen name="padding_horizontal_btn">20dp</dimen>
+    <dimen name="height_btn_min">45dp</dimen>
+
+    <dimen name="size_info_icon">33dp</dimen>
+
+    <dimen name="height_horizontal_line">5dp</dimen>
+
+    <dimen name="width_popup">200dp</dimen>
+    <dimen name="margin_vertical_popup_txv">10dp</dimen>
+
+    <dimen name="height_call_popup">200dp</dimen>
+    <dimen name="width_call_popup">280dp</dimen>
+
+    <dimen name="height_popup_btn_close_min">25dp</dimen>
+    <dimen name="padding_popup_btn_close">16dp</dimen>
+    <dimen name="height_toolbar">50dp</dimen>
+    <dimen name="margin_horizontal">10dp</dimen>
+    <dimen name="popup_width">220dp</dimen>
+    <dimen name="popup_txt_margin_top">15dp</dimen>
+
+    <dimen name="text_size_popup">16sp</dimen>
+    <dimen name="text_size_popup_title">18sp</dimen>
+    <dimen name="text_size_map_title">18sp</dimen>
+</resources>

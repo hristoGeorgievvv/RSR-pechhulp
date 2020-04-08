@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activites.MapsActivity">
+
+    <RelativeLayout
+        android:id="@+id/maps_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_actionbar"
+        android:background="@drawable/btn_bg"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="btnMainScreen"
+            android:text="@string/maps_button_back"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/maps_toolbar"
+        map:uiCompass="false"
+        map:uiZoomControls="false" />
+
+    <RelativeLayout
+        android:id="@+id/maps_call_popup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/maps_toolbar"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_maps_call_popup"
+            android:layout_width="@dimen/width_call_popup"
+            android:layout_height="@dimen/height_call_popup"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorGreen"
+            android:padding="@dimen/height_horizontal_line">
+
+            <TextView
+                android:id="@+id/txv_maps_cost_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/margin_vertical"
+                android:gravity="center_horizontal"
+                android:text="@string/map_popup_title"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_maps_dial"
+                style="@style/ButtonDefault"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:drawableStart="@drawable/main_btn_phone"
+                android:onClick="maps_call"
+                android:text="@string/popup_dial"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/txv_maps_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/btn_maps_dial"
+                android:layout_below="@id/txv_maps_cost_title"
+                android:gravity="center"
+                android:text="@string/map_popup_information"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_maps_popup_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/rl_maps_call_popup"
+            android:layout_alignStart="@id/rl_maps_call_popup"
+            android:layout_marginBottom="-2dp"
+            android:background="@drawable/btn_bg"
+            android:drawableLeft="@drawable/main_btn_close"
+            android:drawablePadding="10dp"
+            android:minHeight="25dp"
+            android:onClick="cancelDial"
+            android:paddingHorizontal="10dp"
+            android:stateListAnimator="@null"
+            android:text="@string/popup_cancel" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_maps_open_popup"
+        style="@style/ButtonDefault"
+        android:layout_width="@dimen/width_btn"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_vertical"
+        android:drawableStart="@drawable/main_btn_tel"
+        android:onClick="btnPopup"
+        android:text="@string/map_button_call"
+        android:textColor="@color/colorWhite" />
+
+    <ImageView
+        android:id="@+id/maps_location_obtaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/clock_mini" />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RSR Pechhulp</string>
+    <string name="error_network_message">You are not connected</string>
+    <string name="error_network_title">No Internet title</string>
+    <string name="error_retry">turn on</string>
+    <string name="error_accept">Turn on</string>
+    <string name="gps_Disabled">GPS disabled</string>
+    <string name="gps_disabled_title">Gps is dissalowed</string>
+    <string name="main_menu_toolbar_title">RSR Revalidatieservice</string>
+    <string name="button_go_to_map">RSR Pechhulp</string>
+    <string name="maps_button_back">RSR Pechhulp</string>
+    <string name="map_popup_title">Belkosten</string>
+    <string name="popup_dial">Bel nu</string>
+    <string name="map_popup_information">Voor dit nummer betaalt u uw gebruikelijke belkosten</string>
+    <string name="popup_cancel">Annuleren</string>
+    <string name="map_button_call">Bel Rsr nu</string>
+    <string name="popup_title">Uw locatie:</string>
+    <string name="popup_address">Verkrijgen adres</string>
+    <string name="popup_info">Onthoud deze locatie voor het telefoongesprek.</string>
+    <string name="cancel_settings">cancel</string>
+    <string name="info_title">Privacybeleid</string>
+    <string name="info_description">Om deze app  te gebruiken, dient u het <a href="https://www.rsr.nl/index.php?page=privacy-wetgeving">privacybeleid</a> te accepteren.</string>
+    <string name="info_button">bevestig</string>
+    <string name="telephoneNumber">+31900 77 88 99 0</string>
+</resources>
